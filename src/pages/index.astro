@@ -475,11 +475,9 @@ const pathologies = [
 	#navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, box-shadow 0.3s; padding: 0 5%; }
 	#navbar.scrolled { background: rgba(255,255,255,0.97); box-shadow: 0 1px 20px rgba(15,39,68,0.08); backdrop-filter: blur(10px); }
 	.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 70px; }
-	.nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; color: var(--navy); }
-	.logo-mark { color: var(--sky); }
-	.logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-	.logo-main { font-family: 'DM Serif Display', serif; font-size: 0.95rem; color: var(--navy); }
-	.logo-sub { font-size: 0.65rem; color: var(--grey); letter-spacing: 1px; text-transform: uppercase; }
+	.nav-logo { display: flex; align-items: center; text-decoration: none; }
+	.logo-img { height: 44px; width: auto; object-fit: contain; }
+	.logo-img-footer { height: 32px; width: auto; object-fit: contain; opacity: 0.85; }
 	.nav-links { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; align-items: center; }
 	.nav-links a { text-decoration: none; color: var(--dark-grey); font-size: 0.85rem; font-weight: 400; letter-spacing: 0.3px; transition: color 0.2s; position: relative; }
 	.nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1px; background: var(--sky); transition: width 0.3s; }
@@ -614,8 +612,7 @@ const pathologies = [
 	/* FOOTER */
 	footer { background: #080f1a; color: rgba(255,255,255,0.5); padding: 2rem 5%; }
 	.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; max-width: 1100px; margin: 0 auto; }
-	.footer-logo { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.7); font-size: 0.85rem; }
-	.footer-logo svg { color: var(--sky); }
+	.footer-logo { display: flex; align-items: center; }
 	.footer-copy { font-size: 0.78rem; margin: 0; }
 	.footer-nav { display: flex; gap: 1.5rem; }
 	.footer-nav a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; letter-spacing: 0.5px; }
@@ -643,7 +640,7 @@ const pathologies = [
 		.nav-links.open { display: flex; }
 		.burger { display: flex; }
 		.patho-grid { grid-template-columns: 1fr; }
-		.equipe-grid, .collab-grid { grid-template-columns: repeat(2, 1fr); }
+		.equipe-grid, .collab-grid { grid-template-columns: 1fr; }
 		.hero-stats { gap: 1rem; }
 		.footer-inner { flex-direction: column; text-align: center; }
 		.footer-nav { justify-content: center; flex-wrap: wrap; }
